@@ -15,7 +15,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="${node.getId()}"><span class="badge log ${node.status.toLower()}-bg mr-2">${node.status?string}</span>${node.name}</div>
+        <div class="node" id="${node.getId()?string["0"]}"><span class="badge log ${node.status.toLower()}-bg mr-2">${node.status?string}</span>${node.name}</div>
         <#if TestService.testHasScreenCapture(node, true)>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
